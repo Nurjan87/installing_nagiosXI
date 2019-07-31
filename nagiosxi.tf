@@ -22,4 +22,8 @@ resource "aws_instance" "nagiosxi" {
       "sudo curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sudo sh"
     ]
   }
+  tags = {
+    Name = "Nagiosxi"
+    
+  }
 }

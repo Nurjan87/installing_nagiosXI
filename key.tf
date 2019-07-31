@@ -1,4 +1,4 @@
-resource "aws_key_pair" "mac" {
-  key_name   = "mac"
-  public_key = "${file("/ssh_keys/app_rsa.pub")}"
+resource "aws_key_pair" "nagios_key" {
+  key_name   = "nagios_key"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
